@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220525172044">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220528085403">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body data-simplebar>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -85,6 +85,7 @@
 									<a href="#" class="bottom-header__link">Магазины</a>
 								</li>
 							</ul>
+							<div class="bottom-header__callback-da"></div>
 						</nav>
 					</div>
 				</div>
@@ -96,14 +97,14 @@
 					<div class="mainscreen__body">
 						<div class="mainscreen__column mainscreen__column_main-content">
 							<div class="mainscreen__main">
-								<h1 class="mainscreen__title title">
+								<h1 data-da=".mainscreen__column_main-picture,767.98,0" class="mainscreen__title title">
 									Ювелирные <span class="title__br">украшения</span>
 								</h1>
 								<p class="mainscreen__text text">
-									Которые <span class="text__underline">подчеркнут<span class="text__decor decor"></span></span> <span class="text__br">твою утонченность и нежность</span>
+									Которые <span class="text__underline">подчеркнут<span class="text__decor decor"></span></span> <span class="text__br">твою утонченность и нежность</span>
 								</p>
 								<div class="mainscreen__button-block">
-									<a href="catalog.html" class="mainscreen__button button">Перейти в каталог</a>
+									<a href="catalog.html" class="mainscreen__button button button_decor">Перейти в каталог</a>
 								</div>
 								<div class="mainscreen__image-block">
 									<div class="mainscreen__picture mainscreen__picture_one">
@@ -125,8 +126,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="mainscreen__container mainscreen__container_big">
-					<a href="#" class="mainscreen__callback callback">
+				<div data-da=".bottom-header__callback-da,767.98,0" class="mainscreen__container mainscreen__container_big">
+					<a data-popup="#callback" href="#" class="mainscreen__callback callback">
 						<svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M37 18.6777L19.3223 1L1.64466 18.6777" stroke="#B38E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 							<path opacity="0.5" d="M30 21.4387L19.3934 10.8321L8.7868 21.4387" stroke="#B38E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -148,19 +149,34 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__callback callback-popup">
+					<form action="#" class="callback-popup__form">
+						<h3 class="callback-popup__title title-popup">Обратный звонок</h3>
+						<div class="callback-popup__input-block">
+							<label for="callback-c1" class="callback-popup__label callback-popup__label_absolute label-popup">Ваше Имя*</label>
+							<input id="callback-c1" autocomplete="off" type="text" name="form[]" class="callback-popup__input input">
+						</div>
+						<div class="callback-popup__input-block">
+							<label for="callback-c2" class="callback-popup__label callback-popup__label_absolute label-popup">Номер телефона*</label>
+							<input id="callback-c2" autocomplete="off" type="text" name="form[]" class="callback-popup__input input">
+						</div>
+						<div class="callback-popup__input-block">
+							<label for="callback-c3" class="callback-popup__label label-popup">Коментарий</label>
+							<textarea id="callback-c3" autocomplete="off" name="form[]" class="callback-popup__input callback-popup__input_textarea input"></textarea>
+						</div>
+						<div class="callback-popup__btn-block">
+							<button type="submit" class="callback-popup__button button button_border">Отправить</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220525172044"></script>
+	<script src="js/app.min.js?_v=20220528085403"></script>
 </body>
 
 </html>
